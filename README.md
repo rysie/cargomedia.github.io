@@ -18,6 +18,11 @@ On AWS create a bucket `www.cargomedia.ch` and IAM user with permissions as foll
     {
       "Effect": "Allow",
       "Action": "s3:*",
+      "Resource": "arn:aws:s3:::www.cargomedia.ch"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "s3:*",
       "Resource": "arn:aws:s3:::www.cargomedia.ch/"
     },
     {
