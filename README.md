@@ -1,8 +1,8 @@
 www.cargomedia.ch
 =================
 
-Deployment
-----------
+Initial installation
+--------------------
 
 Install necessary tools:
 ```
@@ -34,7 +34,9 @@ Configure S3 bucket:
 s3_website cfg apply
 ```
 
-Build website and upload:
+Build and upload website
+------------------------
+
 ```
 jekyll build
 s3_website push --headless
