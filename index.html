@@ -1,0 +1,72 @@
+---
+layout: default
+title: Home
+slug: home
+---
+
+<div class="frontStripe">
+	<h1 class="headline">Small Team, Big Impact</h1>
+	<p class="catchphrase">Large-Scale Web Development</p>
+</div>
+<div class="rainbow">
+	<div class="rainbow-stripe blue">&nbsp;</div>
+	<div class="rainbow-stripe green">&nbsp;</div>
+	<div class="rainbow-stripe red">&nbsp;</div>
+	<div class="rainbow-stripe orange">&nbsp;</div>
+</div>
+
+<article class="article-static sheet">
+	<div class="columns">
+		<div class="column2">
+			<h4>Cargo Media AG</h4>
+			<p>We’re a startup with primary offices in Basel, the second largest city in Switzerland. Our highly qualified team specializes in large scale web application development. We work in a friendly, open and relaxed environment but also enjoy a challenge, and so we take on very demanding projects. As we grow, we’re constantly on the hunt for creative and dynamic talent. If you’re interested, please review our
+				<a href="/jobs">current openings</a> and see if a position seems like a good fit for you.</p>
+		</div>
+		<div class="column2">
+			<h4>The Framework</h4>
+			<p>Our custom built modular PHP framework is currently used for high traffic, high performance social networking web applications. Its hand coded capabilities include real-time communications via Websockets, video streaming as well as robust user profile and media hosting functionality. More specific details on the platform can be found in the
+				<a href="/tech">technology section</a>.</p>
+		</div>
+	</div>
+</article>
+
+<div class="headStripe">
+	<div class="sheet">
+		<h2>Opensource <strong>Projects</strong></h2>
+		<span class="subtitle">Public Github Repos</span>
+	</div>
+</div>
+<article class="article-static article-github sheet">
+		<div class="project boxAlternative">
+			<h4>puppet-packages</h4>
+			<p>Reusable puppet modules for Debian Squeeze</p>
+		</div>
+		<div class="project boxAlternative">
+			<h4>socket-redis</h4>
+			<p>WebSocket pub/sub server and client (with SockJS), exposing an API over Redis</p>
+		</div>
+</article>
+
+<div class="headStripe">
+	<div class="sheet">
+		<h2>Company <strong>Blog</strong></h2>
+		<span class="subtitle">Insights from our products, technology and company culture</span>
+	</div>
+</div>
+<article class="article-static article-blog sheet">
+	<ul class="posts">
+		{% for post in site.posts %}
+		<li class="post boxAlternative">
+			{% if post.date %}<time class="post-timestamp">{{ post.date | date_to_string }}</time>{% endif %}
+			<a href="{{ post.url }}" class="post-title"><h4>{{ post.title }}</h4></a>
+			{% if post.owner %}<p class="post-owner">by {{ post.owner }}</p>{% endif %}
+			{% if post.content contains '<!--more-->' %}
+			{{ post.content | split:'<!--more-->' | first }}
+				<a class="post-more" href="{{ post.url }}"><button>Read More</button></a>
+			{% else %}
+			{{ post.content }}
+			{% endif %}
+		</li>
+		{% endfor %}
+	</ul>
+</article>

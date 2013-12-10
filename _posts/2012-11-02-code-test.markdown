@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "Code Styles test"
+date:   2013-12-12 21:16:06
+owner: Christophe
+categories: code styles
+---
+
+Normal text looks like this. Normal text looks like this.Normal text looks like this.Normal text looks like this.Normal text looks like this.Normal text looks like this.
+
+# Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+<!--more-->
+###### Header 6
+
+- List 1
+- List 2
+- List 3
+
+_italic_
+__bold__
+
+1. Ordered List
+2. Ordered List
+3. Ordered List
+
+
+
+{% highlight css %}
+.foo {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid blue;
+}
+{% endhighlight %}
+
