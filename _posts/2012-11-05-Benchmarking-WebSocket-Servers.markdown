@@ -9,7 +9,7 @@ tags: [WebSockets, node.js, Sock.js, Socket.IO, benchmark]
 We're using WebSocket connections to provide real-time information to the users of our PHP web application. A year ago we implemented a solution based on the WebSocket-emulation layer Socket.IO. Due to some issues we switched to
 SockJS few months ago. For both we’ve set up a small server in Node.js which relays the push messages from our PHP application to the WebSocket-emulation, which then pushes them to the browser:
 
-![SocketRedis](/img/posts/socket-redis-1.png)
+![SocketRedis](/img/posts/2012/socket-redis-1.png)
 
 <!--more-->
 
