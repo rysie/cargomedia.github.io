@@ -4,11 +4,11 @@ title: Home
 slug: home
 ---
 
-<div class="frontStripe">
+<div class="bigStripe home">
 	<h1 class="headline">Small Team, Big Impact</h1>
 	<p class="catchphrase">Large-Scale Web Development</p>
 </div>
-<div class="rainbow">
+<div class="rainbow sheet">
 	<div class="rainbow-stripe blue">&nbsp;</div>
 	<div class="rainbow-stripe green">&nbsp;</div>
 	<div class="rainbow-stripe red">&nbsp;</div>
@@ -18,55 +18,301 @@ slug: home
 <article class="article-static sheet">
 	<div class="columns">
 		<div class="column2">
-			<h4>Cargo Media AG</h4>
+			<h4>Cargo Media</h4>
 			<p>We’re a startup with primary offices in Basel, the second largest city in Switzerland. Our highly qualified team specializes in large scale web application development. We work in a friendly, open and relaxed environment but also enjoy a challenge, and so we take on very demanding projects. As we grow, we’re constantly on the hunt for creative and dynamic talent. If you’re interested, please review our
 				<a href="/jobs">current openings</a> and see if a position seems like a good fit for you.</p>
 		</div>
 		<div class="column2">
-			<h4>The Framework</h4>
+			<h4>Our Stack</h4>
 			<p>Our custom built modular PHP framework is currently used for high traffic, high performance social networking web applications. Its hand coded capabilities include real-time communications via Websockets, video streaming as well as robust user profile and media hosting functionality. More specific details on the platform can be found in the
 				<a href="/tech">technology section</a>.</p>
 		</div>
 	</div>
 </article>
 
-<div class="headStripe">
+<div class="headingStripe">
 	<div class="sheet">
 		<h2>Opensource <strong>Projects</strong></h2>
 		<span class="subtitle">Public Github Repos</span>
 	</div>
 </div>
 <article class="article-static article-github sheet">
-		<div class="project boxAlternative">
-			<h4>puppet-packages</h4>
-			<p>Reusable puppet modules for Debian Squeeze</p>
-		</div>
-		<div class="project boxAlternative">
-			<h4>socket-redis</h4>
-			<p>WebSocket pub/sub server and client (with SockJS), exposing an API over Redis</p>
-		</div>
+	<p>Here are some of our public side-projects which helped us solve specific problems.</p>
+	<div class="project boxAlternative">
+		<a href="https://github.com/cargomedia/bipbip">bipbip</a> <span class="tags"><span class="tag">ruby</span></span>
+		<p>Reusable puppet modules for Debian Squeeze</p>
+	</div>
+	<div class="project boxAlternative">
+		<a href="https://github.com/cargomedia/puppet-packages">puppet-packages</a> <span class="tags"><span class="tag">puppet</span></span>
+		<p>Agent to collect server metrics and send them to the CopperEgg RevealMetrics platform. Plugins for different metrics available. Will spawn a child process for every plugin and server you tell it to monitor.</p>
+	</div>
+	<div class="project boxAlternative">
+		<a href="https://github.com/cargomedia/socket-redis">socket-redis</a> <span class="tags"><span class="tag">Sock.js</span> <span class="tag">Socket.IO</span> <span class="tag">node.js</span></span>
+		<p>WebSocket pub/sub server and client (with SockJS), exposing an API over Redis</p>
+		<p class="description">"socket-redis" starts a WebSocket emulation server (SockJS) where clients can connect to, and subscribe to multiple channels. The server will let you consume client-related events like message, subscribe and unsubscribe on a Redis pub/sub channel socket-redis-up. Additionally it will subscribe to another pub/sub channel socket-redis-down where you can send messages to all clients in a channel.</p>
+	</div>
+	<div class="project boxAlternative">
+		<a href="https://github.com/cargomedia/vagrant-boxes">vagrant-boxes</a> <span class="tags"><span class="tag">packer</span> </span>
+		<p>Generate Vagrant boxes with packer</p>
+	</div>
+	<div class="project boxAlternative">
+		<a href="https://github.com/cargomedia/github-issues">github-issues</a> <span class="tags"><span class="tag">git</span></span>
+		<p>gi is a command line tool to CRUD github issues. It maps every issue to a branch issue-'issue-number'.</p>
+	</div>
 </article>
 
-<div class="headStripe">
+<div class="headingStripe">
+	<div class="sheet">
+		<h2>Our <strong>Team</strong></h2>
+		<span class="subtitle">hallo</span>
+	</div>
+</div>
+<article class="article-static sheet">
+	<p>Our team includes 4 nationalities...blabla</p>
+	<div class="columns">
+		<div class="column3">
+			<div class="businessCard">
+				<div class="thumb seahorse"></div>
+				<div class="content">
+					<h4>Fabian Frey</h4>
+					<p class="status">Co-Founder, CEO</p>
+					<address>
+						<ul class="socialConnect">
+							<li>
+								<a href="https://twitter.com/Erle41" title="Twitter"><span class="icon icon-twitter-light"></span><span class="label">@Erle41</span></a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="column3">
+			<div class="businessCard">
+				<div class="thumb fish"></div>
+				<div class="content">
+					<h4>Timo Binder</h4>
+					<p class="status">Co-Founder, Finance</p>
+					<address>
+						<ul class="socialConnect">
+							<li>
+								<a href="https://twitter.com/XXX" title="Twitter"><span class="icon icon-twitter-light"></span><span class="label">@xxx</span></a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="column3">
+			<div class="businessCard">
+				<div class="thumb owl"></div>
+				<div class="content">
+					<h4>Reto Kaiser</h4>
+					<p class="status">Co-Founder, CTO</p>
+					<address>
+						<ul class="socialConnect">
+							<li>
+								<a href="https://twitter.com/stophecom" title="Twitter"><span class="icon icon-twitter-light"></span><span class="label">@cargomedia</span></a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="column3">
+			<div class="businessCard">
+				<div class="thumb stag"></div>
+				<div class="content">
+					<h4>Alexis Peter</h4>
+					<p class="status">PHP</p>
+					<address>
+						<ul class="socialConnect">
+							<li>
+								<a href="https://twitter.com/xxx" title="Twitter"><span class="icon icon-twitter-light"></span><span class="label">@xxx</span></a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="column3">
+			<div class="businessCard">
+				<div class="thumb bat"></div>
+				<div class="content">
+					<h4>Christophe Schwyzer</h4>
+					<p class="status">Design, Front-End</p>
+					<address>
+						<ul class="socialConnect">
+							<li>
+								<a href="https://twitter.com/stophecom" title="Twitter"><span class="icon icon-twitter-light"></span><span class="label">@stophecom</span></a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="column3">
+			<div class="businessCard">
+				<div class="thumb panda"></div>
+				<div class="content">
+					<h4>Tomasz Durka</h4>
+					<p class="status">PHP</p>
+					<address>
+						<ul class="socialConnect">
+							<li>
+								<a href="https://twitter.com/tomaszdurka" title="Twitter"><span class="icon icon-twitter-light"></span><span class="label">@tomaszdurka</span></a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="column3">
+			<div class="businessCard">
+				<div class="thumb turtle"></div>
+				<div class="content">
+					<h4>Marian Sollmann</h4>
+					<p class="status">PHP</p>
+					<address>
+						<ul class="socialConnect">
+							<li>
+								<a href="https://twitter.com/xxx" title="Twitter"><span class="icon icon-twitter-light"></span><span class="label">@xxx</span></a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="column3">
+			<div class="businessCard">
+				<div class="thumb zebra"></div>
+				<div class="content">
+					<h4>Sébastien</h4>
+					<p class="status">PHP</p>
+					<address>
+						<ul class="socialConnect">
+							<li>
+								<a href="https://twitter.com/xxx" title="Twitter"><span class="icon icon-twitter-light"></span><span class="label">@xxx</span></a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="column3">
+			<div class="businessCard">
+				<div class="thumb monkey"></div>
+				<div class="content">
+					<h4>Chris Stasiak</h4>
+					<p class="status">PHP</p>
+					<address>
+						<ul class="socialConnect">
+							<li>
+								<a href="https://twitter.com/xxx" title="Twitter"><span class="icon icon-twitter-light"></span><span class="label">@xxx</span></a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="column3">
+			<div class="businessCard">
+				<div class="thumb dog"></div>
+				<div class="content">
+					<h4>Philipp</h4>
+					<p class="status">Network Engineer</p>
+					<address>
+						<ul class="socialConnect">
+							<li>
+								<a href="https://twitter.com/xxx" title="Twitter"><span class="icon icon-twitter-light"></span><span class="label">@xxx</span></a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="column3">
+			<div class="businessCard">
+				<div class="thumb catapillar"></div>
+				<div class="content">
+					<h4>Matteo</h4>
+					<p class="status">Marketing</p>
+					<address>
+						<ul class="socialConnect">
+							<li>
+								<a href="https://twitter.com/xxx" title="Twitter"><span class="icon icon-twitter-light"></span><span class="label">@xxx</span></a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="column3">
+			<div class="businessCard">
+				<div class="thumb bull"></div>
+				<div class="content">
+					<h4>Hannes</h4>
+					<p class="status">Marketing</p>
+					<address>
+						<ul class="socialConnect">
+							<li>
+								<a href="https://twitter.com/xxx" title="Twitter"><span class="icon icon-twitter-light"></span><span class="label">@xxx</span></a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="column3">
+			<div class="businessCard">
+				<div class="thumb fox"></div>
+				<div class="content">
+					<h4>Fabienne</h4>
+					<p class="status">Office</p>
+					<address>
+						<ul class="socialConnect">
+							<li>
+								<a href="https://twitter.com/xxx" title="Twitter"><span class="icon icon-twitter-light"></span><span class="label">@xxx</span></a>
+							</li>
+						</ul>
+					</address>
+				</div>
+			</div>
+		</div>
+		<div class="column3">
+			<a href="/jobs.html" class="businessCard empty">
+				<div class="thumb empty"></div>
+				<div class="content">
+					<h4>You ?</h4>
+					<p class="status">PHP</p>
+					<p class="apply">Click to apply!</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</article>
+
+<div class="headingStripe">
 	<div class="sheet">
 		<h2>Company <strong>Blog</strong></h2>
 		<span class="subtitle">Insights from our products, technology and company culture</span>
 	</div>
 </div>
-<article class="article-static article-blog sheet">
-	<ul class="posts">
-		{% for post in site.posts %}
-		<li class="post boxAlternative">
-			{% if post.date %}<time class="post-timestamp">{{ post.date | date_to_string }}</time>{% endif %}
-			<a href="{{ post.url }}" class="post-title"><h4>{{ post.title }}</h4></a>
-			{% if post.owner %}<p class="post-owner">by {{ post.owner }}</p>{% endif %}
-			{% if post.content contains '<!--more-->' %}
-			{{ post.content | split:'<!--more-->' | first }}
-				<a class="post-more" href="{{ post.url }}"><button>Read More</button></a>
-			{% else %}
-			{{ post.content }}
-			{% endif %}
-		</li>
+<article class="article-static article-blogPreview sheet">
+	<ul class="posts columns">
+		{% for post in site.posts limit:6 %}
+			<li class="post column2">
+				{% if post.date %}<time class="post-timestamp">{{ post.date | date_to_string }}</time>{% endif %}
+				<h4 class="post-title nowrap"><a href="{{ post.url }}" class="post-title-link">{{ post.title }}</a></h4>
+				{% if post.tags %}
+					<p class="post-tags tags nowrap">
+						{% for tag in post.tags %}
+							<span class="tag">{{ tag }}</span>
+						{% endfor %}
+					</p>
+				{% endif %}
+				{% if post.owner %}<p class="post-owner">by {{ post.owner }}</p>{% endif %}
+			</li>
 		{% endfor %}
 	</ul>
+	<a class="post-more" href="/blog.html"><button>View All</button></a>
 </article>

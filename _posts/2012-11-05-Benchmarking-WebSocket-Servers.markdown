@@ -3,7 +3,7 @@ layout: post
 title:  "Benchmarking WebSocket Servers"
 date:   2012-11-05 21:16:06
 owner: Reto
-categories: WebSockets
+tags: [WebSockets, node.js, Sock.js, Socket.IO, benchmark]
 ---
 
 We're using WebSocket connections to provide real-time information to the users of our PHP web application. A year ago we implemented a solution based on the WebSocket-emulation layer Socket.IO. Due to some issues we switched to

@@ -3,7 +3,7 @@ layout: post
 title:  "Code Styles test"
 date:   2013-12-12 21:16:06
 owner: Christophe
-categories: code styles
+tags: [foo, bar]
 ---
 
 Normal text looks like this. Normal text looks like this.Normal text looks like this.Normal text looks like this.Normal text looks like this.Normal text looks like this.
