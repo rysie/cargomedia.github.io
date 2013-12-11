@@ -10,7 +10,7 @@
 @colorBgAlternative: #383838;
 @colorBgAlternative: #5C5B5B;
 @colorBgAlternative: #4d4c4c;
-@colorFgShy: lighten(@colorFg, 30);
+@colorFgShy: lighten(@colorFg, 20);
 @colorFgBorder: #b9b9b9;
 
 @fontDefault: 'Open Sans', sans-serif;
@@ -163,6 +163,19 @@ p {
 
 	&:last-child {
 		margin: 0;
+	}
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 600;
+}
+
+ul {
+	list-style: disc;
+	margin-bottom: 15px;
+
+	li {
+		margin-bottom: 5px;
 	}
 }
 
@@ -388,12 +401,9 @@ strong {
 			background-color: @blue;
 		}
 		&:nth-child(2):after {
-			background-color: @green;
-		}
-		&:nth-child(3):after {
 			background-color: @red;
 		}
-		&:nth-child(4):after {
+		&:nth-child(3):after {
 			background-color: @orange;
 		}
 	}
@@ -419,17 +429,16 @@ strong {
 		display: inline-block;
 		width: 18px;
 		height: 18px;
-		margin-left: 8px;
-		text-align: center;
-		border-radius: 9px;
+		margin: 4px 0 0 8px;
+		line-height: 18px;
+		border-radius: 50%;
 		font-weight: 600;
 		font-size: 11px;
-		line-height: 18px;
-		color: white;
+		text-align: center;
+		color: @colorBg;
 		text-shadow: 1px 1px @colorFg;
 		background-color: fadeout(@colorFg, 50);
 		vertical-align: top;
-		margin-top: 4px;
 		letter-spacing: normal;
 	}
 }
@@ -437,11 +446,6 @@ strong {
 .article-static {
 	padding: 30px 12px;
 	margin-bottom: 25px;
-
-	.love {
-		background-color: transparent;
-		color: @red;
-	}
 }
 
 .article-github {
@@ -453,6 +457,10 @@ strong {
 		background-repeat: no-repeat;
 		background-size: 40px;
 		background-position: 10px 10px;
+	}
+
+	.project-title {
+		font-weight: 600;
 	}
 }
 
@@ -477,6 +485,10 @@ strong {
 	list-style: none;
 }
 
+.post-timestamp {
+	color: @colorFgShy;
+}
+
 .post-tags {
 	margin-bottom: 4px;
 }
@@ -487,12 +499,16 @@ strong {
 }
 
 .post-content {
+	margin-bottom: 12px;
+
 	img {
 		.box-sizing(border-box);
+		margin: 8px 0;
 		padding: 2px;
 		border: 1px solid fadeout(@colorFg, 90);
 		background-color: rgb(254, 254, 254);
 		height: auto;
+		max-height: 80%;
 	}
 }
 
@@ -503,24 +519,18 @@ strong {
 
 	.post-timestamp {
 		font-size: @fontSizeTiny;
-		color: @colorFgShy;
 	}
 
 	.post-title {
 		font-size: 1.5rem;
 		font-weight: lighter;
 		margin: 0;
-
+		color: @colorFgShy;
 	}
 
 	.post-title-link {
 		font-size: 1.3rem;
-
-	}
-
-	.post-more {
-		margin-top: 8px;
-		display: inline-block;
+		color: @colorFgShy;
 	}
 }
 
@@ -530,22 +540,22 @@ strong {
 		font-size: 26px;
 	}
 
+	.post-timestamp {
+		font-size: @fontSizeSmall;
+	}
+
 	.post-title-link {
 		color: @colorFgShy;
 	}
 
-	.post-timestamp {
-		color: @colorFgShy;
-	}
 	.post-content {
 		img {
 			max-height: 300px;
 		}
 	}
 
-
 	.post-more {
-		margin-top: 8px;
+		margin-top: 15px;
 		display: inline-block;
 	}
 }
@@ -584,8 +594,8 @@ strong {
 		box-shadow: none;
 	}
 
-	.boxAlternative-title {
-		margin: 0;
+	h1, h2, h3, h4, h5 {
+		color: @colorFgShy;
 	}
 }
 
@@ -614,8 +624,8 @@ strong {
 }
 
 .highlight {
-	border: 1px dashed #d8d8d8;
-	padding: 12px;
+	border: 1px dashed @colorFgBorder;
+	padding: 0 12px;
 	margin: 12px 0;
 }
 
@@ -779,6 +789,47 @@ strong {
 	}
 }
 
+.contact {
+	background-position: 0 2px;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	padding-left: 25px;
+
+	&.twitter {
+		background-image: url(/img/icon/socialMedia-light-01.svg);
+	}
+	&.facebook{
+		background-image: url(/img/icon/socialMedia-light-02.svg);
+	}
+	&.github{
+		background-image: url(/img/icon/socialMedia-light-03.svg);
+	}
+	&.google{
+		background-image: url(/img/icon/socialMedia-light-04.svg);
+	}
+	&.linkedIn{
+		background-image: url(/img/icon/socialMedia-light-05.svg);
+	}
+
+	&.dark {
+		&.twitter {
+			background-image: url(/img/icon/socialMedia-dark-01.svg);
+		}
+		&.facebook{
+			background-image: url(/img/icon/socialMedia-dark-02.svg);
+		}
+		&.github{
+			background-image: url(/img/icon/socialMedia-dark-03.svg);
+		}
+		&.google{
+			background-image: url(/img/icon/socialMedia-dark-04.svg);
+		}
+		&.linkedIn{
+			background-image: url(/img/icon/socialMedia-dark-05.svg);
+		}
+	}
+}
+
 .businessCard {
 	position: relative;
 	display: block;
@@ -851,6 +902,9 @@ strong {
 		&.zebra {
 			background-image: url(/img/animal/animal_zebra.svg);
 		}
+		&.cow {
+			background-image: url(/img/animal/animal_cow.svg);
+		}
 		&.empty {
 			background-image: url(/img/animal/animal_empty.svg);
 		}
@@ -862,11 +916,11 @@ strong {
 			font-weight: 600;
 			margin: 0 0 4px 0;
 		}
-		.status {
+		.mission {
 			font-size: 14px;
 			font-family: @fontSpecial;
 			color: @colorFgShy;
-			margin: 0;
+			margin: 0 0 3px 0;
 		}
 
 		.apply {
@@ -922,46 +976,4 @@ footer {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-
-	.icon {
-		display: inline-block;
-		margin-right: 5px;
-		width: 22px;
-		height: 22px;
-		background-size: 95%;
-		background-position: center;
-		background-repeat: no-repeat;
-		vertical-align: middle;
-
-		&.icon-twitter {
-			background-image: url("/img/icon/socialMedia-dark-01.svg");
-		}
-		&.icon-facebook {
-			background-image: url("/img/icon/socialMedia-dark-02.svg");
-		}
-		&.icon-github {
-			background-image: url("/img/icon/socialMedia-dark-03.svg");
-		}
-		&.icon-google {
-			background-image: url("/img/icon/socialMedia-dark-04.svg");
-		}
-
-		&.icon-twitter-light {
-			background-image: url("/img/icon/socialMedia-light-01.svg");
-		}
-		&.icon-facebook-light {
-			background-image: url("/img/icon/socialMedia-light-02.svg");
-		}
-		&.icon-github-light {
-			background-image: url("/img/icon/socialMedia-light-03.svg");
-		}
-		&.icon-google-light {
-			background-image: url("/img/icon/socialMedia-light-04.svg");
-		}
-	}
-
-	.label {
-		position: relative;
-		top: 1px;
-	}
 }

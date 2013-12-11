@@ -56,6 +56,20 @@ p {
 p:last-child {
   margin: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+ul {
+  list-style: disc;
+  margin-bottom: 15px;
+}
+ul li {
+  margin-bottom: 5px;
+}
 button,
 input[type=submit] {
   -webkit-appearance: none;
@@ -316,12 +330,9 @@ strong {
   background-color: #3fb4ff;
 }
 .menu-item.active:nth-child(2):after {
-  background-color: #009245;
-}
-.menu-item.active:nth-child(3):after {
   background-color: #d41440;
 }
-.menu-item.active:nth-child(4):after {
+.menu-item.active:nth-child(3):after {
   background-color: #f1861e;
 }
 .menu-item-link {
@@ -344,26 +355,21 @@ strong {
   display: inline-block;
   width: 18px;
   height: 18px;
-  margin-left: 8px;
-  text-align: center;
-  border-radius: 9px;
+  margin: 4px 0 0 8px;
+  line-height: 18px;
+  border-radius: 50%;
   font-weight: 600;
   font-size: 11px;
-  line-height: 18px;
-  color: white;
+  text-align: center;
+  color: #ffffff;
   text-shadow: 1px 1px #333333;
   background-color: rgba(51, 51, 51, 0.5);
   vertical-align: top;
-  margin-top: 4px;
   letter-spacing: normal;
 }
 .article-static {
   padding: 30px 12px;
   margin-bottom: 25px;
-}
-.article-static .love {
-  background-color: transparent;
-  color: #d41440;
 }
 .article-github .project {
   position: relative;
@@ -373,6 +379,9 @@ strong {
   background-repeat: no-repeat;
   background-size: 40px;
   background-position: 10px 10px;
+}
+.article-github .project-title {
+  font-weight: 600;
 }
 .tags {
   font-size: 0.8rem;
@@ -391,69 +400,74 @@ strong {
   padding: 0;
   list-style: none;
 }
+.post-timestamp {
+  color: #666666;
+}
 .post-tags {
   margin-bottom: 4px;
 }
 .post-owner {
   font-size: 0.8rem;
-  color: #808080;
+  color: #666666;
+}
+.post-content {
+  margin-bottom: 12px;
 }
 .post-content img {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  margin: 8px 0;
   padding: 2px;
   border: 1px solid rgba(51, 51, 51, 0.09999999999999998);
   background-color: #fefefe;
   height: auto;
+  max-height: 80%;
 }
 .article-blogPreview .post {
   margin-bottom: 12px;
 }
 .article-blogPreview .post-timestamp {
   font-size: 0.6rem;
-  color: #808080;
 }
 .article-blogPreview .post-title {
   font-size: 1.5rem;
   font-weight: lighter;
   margin: 0;
+  color: #666666;
 }
 .article-blogPreview .post-title-link {
   font-size: 1.3rem;
-}
-.article-blogPreview .post-more {
-  margin-top: 8px;
-  display: inline-block;
+  color: #666666;
 }
 .article-blog .post-title {
   margin: 0;
   font-size: 26px;
 }
-.article-blog .post-title-link {
-  color: #808080;
-}
 .article-blog .post-timestamp {
-  color: #808080;
+  font-size: 0.8rem;
+}
+.article-blog .post-title-link {
+  color: #666666;
 }
 .article-blog .post-content img {
   max-height: 300px;
 }
 .article-blog .post-more {
-  margin-top: 8px;
+  margin-top: 15px;
   display: inline-block;
 }
 .article-post .post-title {
   font-size: 26px;
-  color: #808080;
+  color: #666666;
   margin-bottom: 0;
 }
 .article-post .post-timestamp {
-  color: #808080;
+  color: #666666;
 }
 .article-post .post-owner {
   font-size: 11px;
-  color: #808080;
+  color: #666666;
 }
 .boxAlternative {
   position: relative;
@@ -472,8 +486,12 @@ strong {
   background-color: transparent;
   box-shadow: none;
 }
-.boxAlternative .boxAlternative-title {
-  margin: 0;
+.boxAlternative h1,
+.boxAlternative h2,
+.boxAlternative h3,
+.boxAlternative h4,
+.boxAlternative h5 {
+  color: #666666;
 }
 .article-career .boxAlternative {
   position: relative;
@@ -499,8 +517,8 @@ strong {
   }
 }
 .highlight {
-  border: 1px dashed #d8d8d8;
-  padding: 12px;
+  border: 1px dashed #b9b9b9;
+  padding: 0 12px;
   margin: 12px 0;
 }
 .bigStripe {
@@ -646,6 +664,42 @@ strong {
     display: block;
   }
 }
+.contact {
+  background-position: 0 2px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: 25px;
+}
+.contact.twitter {
+  background-image: url(/img/icon/socialMedia-light-01.svg);
+}
+.contact.facebook {
+  background-image: url(/img/icon/socialMedia-light-02.svg);
+}
+.contact.github {
+  background-image: url(/img/icon/socialMedia-light-03.svg);
+}
+.contact.google {
+  background-image: url(/img/icon/socialMedia-light-04.svg);
+}
+.contact.linkedIn {
+  background-image: url(/img/icon/socialMedia-light-05.svg);
+}
+.contact.dark.twitter {
+  background-image: url(/img/icon/socialMedia-dark-01.svg);
+}
+.contact.dark.facebook {
+  background-image: url(/img/icon/socialMedia-dark-02.svg);
+}
+.contact.dark.github {
+  background-image: url(/img/icon/socialMedia-dark-03.svg);
+}
+.contact.dark.google {
+  background-image: url(/img/icon/socialMedia-dark-04.svg);
+}
+.contact.dark.linkedIn {
+  background-image: url(/img/icon/socialMedia-dark-05.svg);
+}
 .businessCard {
   position: relative;
   display: block;
@@ -718,6 +772,9 @@ strong {
 .businessCard .thumb.zebra {
   background-image: url(/img/animal/animal_zebra.svg);
 }
+.businessCard .thumb.cow {
+  background-image: url(/img/animal/animal_cow.svg);
+}
 .businessCard .thumb.empty {
   background-image: url(/img/animal/animal_empty.svg);
 }
@@ -728,11 +785,11 @@ strong {
   font-weight: 600;
   margin: 0 0 4px 0;
 }
-.businessCard .content .status {
+.businessCard .content .mission {
   font-size: 14px;
   font-family: 'Bad Script', cursive;
-  color: #808080;
-  margin: 0;
+  color: #666666;
+  margin: 0 0 3px 0;
 }
 .businessCard .content .apply {
   margin: 0;
@@ -777,42 +834,4 @@ footer a {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-.socialConnect .icon {
-  display: inline-block;
-  margin-right: 5px;
-  width: 22px;
-  height: 22px;
-  background-size: 95%;
-  background-position: center;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-}
-.socialConnect .icon.icon-twitter {
-  background-image: url("/img/icon/socialMedia-dark-01.svg");
-}
-.socialConnect .icon.icon-facebook {
-  background-image: url("/img/icon/socialMedia-dark-02.svg");
-}
-.socialConnect .icon.icon-github {
-  background-image: url("/img/icon/socialMedia-dark-03.svg");
-}
-.socialConnect .icon.icon-google {
-  background-image: url("/img/icon/socialMedia-dark-04.svg");
-}
-.socialConnect .icon.icon-twitter-light {
-  background-image: url("/img/icon/socialMedia-light-01.svg");
-}
-.socialConnect .icon.icon-facebook-light {
-  background-image: url("/img/icon/socialMedia-light-02.svg");
-}
-.socialConnect .icon.icon-github-light {
-  background-image: url("/img/icon/socialMedia-light-03.svg");
-}
-.socialConnect .icon.icon-google-light {
-  background-image: url("/img/icon/socialMedia-light-04.svg");
-}
-.socialConnect .label {
-  position: relative;
-  top: 1px;
 }
