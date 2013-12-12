@@ -457,6 +457,19 @@ strong {
   margin-top: 15px;
   display: inline-block;
 }
+.article-blog .pagination {
+  text-align: center;
+}
+.article-blog .pagination-link,
+.article-blog .pagination-current {
+  display: inline-block;
+  padding: 1px 8px;
+}
+.article-blog .pagination-current {
+  border-radius: 3px;
+  background-color: #d41440;
+  color: #ffffff;
+}
 .article-post .post-title {
   font-size: 26px;
   color: #666666;
