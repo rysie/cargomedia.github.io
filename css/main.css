@@ -424,7 +424,7 @@ strong {
 .post-content iframe {
   margin: 10px 0;
 }
-.article-content {
+.task-content {
 	margin-bottom: 12px;
 }
 .article-blogPreview .post {
@@ -472,7 +472,7 @@ strong {
   font-size: 11px;
   color: #666666;
 }
-.article-task .article-title {
+.article-task .task-title {
 	font-size: 26px;
 	color: #666666;
 	margin-bottom: 10px;
