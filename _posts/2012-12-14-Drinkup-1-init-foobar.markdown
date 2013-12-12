@@ -15,7 +15,7 @@ It’s adressed to people interested in new technologies, particularly in Web De
 
 More info on [Meetup](http://www.meetup.com/fooBar/events/95340232/).
 
-$fooBar is an event series with monthly meetups at Agora Bar, powered by Cargo Media AG.
+$fooBar is an event series with monthly meetups at Agora Bar, powered by Cargo Media.
 
 
 
