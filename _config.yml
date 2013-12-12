@@ -1,3 +1,5 @@
 name: Cargo Media AG
 markdown: redcarpet
 pygments: true
+paginate: 6
+paginate_path: "blog/page:num"
