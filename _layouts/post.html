@@ -7,6 +7,13 @@ comments: true
 	<div class="boxAlternative">
 		{% if page.date %}<time class="post-timestamp">{{ page.date | date_to_string }}</time>{% endif %}
 		<h1 class="post-title">{{ page.title }}</h1>
+		{% if page.tags %}
+			<p class="post-tags tags nowrap">
+				{% for tag in page.tags %}
+					<span class="tag">{{ tag }}</span>
+				{% endfor %}
+			</p>
+		{% endif %}
 		{% if page.owner %}<p class="post-owner">by {{ page.owner }}</p>{% endif %}
 
 		<div class="post-content">
