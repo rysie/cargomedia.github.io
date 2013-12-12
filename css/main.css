@@ -53,6 +53,9 @@ p {
 p:last-child {
   margin: 0;
 }
+p.solitary {
+	margin: 35px 0;
+}
 h1,
 h2,
 h3,
@@ -118,7 +121,7 @@ strong {
   padding-bottom: 12px;
 }
 @media (min-width: 700px) {
-  
+
 }
 .columns .column2 {
   box-sizing: border-box;
@@ -128,7 +131,7 @@ strong {
   padding-bottom: 12px;
 }
 @media (min-width: 700px) {
-  
+
 }
 @media (min-width: 700px) {
   .columns .column2 {
@@ -150,7 +153,7 @@ strong {
   padding-bottom: 12px;
 }
 @media (min-width: 700px) {
-  
+
 }
 @media (min-width: 700px) {
   .columns .column2flex:first-child {
@@ -171,7 +174,7 @@ strong {
   padding-bottom: 12px;
 }
 @media (min-width: 700px) {
-  
+
 }
 @media (min-width: 800px) {
   .columns .column3 {
