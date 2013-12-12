@@ -53,9 +53,6 @@ p {
 p:last-child {
   margin: 0;
 }
-p.solitary {
-	margin: 35px 0;
-}
 h1,
 h2,
 h3,
@@ -121,7 +118,7 @@ strong {
   padding-bottom: 12px;
 }
 @media (min-width: 700px) {
-
+  
 }
 .columns .column2 {
   box-sizing: border-box;
@@ -131,7 +128,7 @@ strong {
   padding-bottom: 12px;
 }
 @media (min-width: 700px) {
-
+  
 }
 @media (min-width: 700px) {
   .columns .column2 {
@@ -153,7 +150,7 @@ strong {
   padding-bottom: 12px;
 }
 @media (min-width: 700px) {
-
+  
 }
 @media (min-width: 700px) {
   .columns .column2flex:first-child {
@@ -174,7 +171,7 @@ strong {
   padding-bottom: 12px;
 }
 @media (min-width: 700px) {
-
+  
 }
 @media (min-width: 800px) {
   .columns .column3 {
@@ -367,7 +364,7 @@ strong {
   vertical-align: top;
   letter-spacing: normal;
 }
-.article-static {
+.article {
   padding: 30px 12px;
   margin-bottom: 25px;
 }
@@ -424,9 +421,6 @@ strong {
 .post-content iframe {
   margin: 10px 0;
 }
-.task-content {
-	margin-bottom: 12px;
-}
 .article-blogPreview .post {
   margin-bottom: 12px;
 }
@@ -471,11 +465,6 @@ strong {
 .article-post .post-owner {
   font-size: 11px;
   color: #666666;
-}
-.article-task .task-title {
-	font-size: 26px;
-	color: #666666;
-	margin-bottom: 10px;
 }
 .boxAlternative {
   position: relative;
