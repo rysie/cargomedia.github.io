@@ -5,13 +5,12 @@ http://www.cargomedia.ch/
 
 Static [jekyll](http://jekyllrb.com/) powered company website
 
-
 - All posts are stored in the `_posts/` folder
 - Images from posts are stored in the `img/posts/[year]/` folder
 
 ## Add Blogpost
 
-- Add a file with naming convention date.title.markdown (e.g. `2013-2-22-New-Post.markdown`) into `_posts/`
+- Add a file with naming convention date-title.markdown (e.g. `2013-2-22-New-Post.markdown`) into `_posts/`
 - Add post meta information (YAML), followed by markdown
 - Use `<!--more-->` to slice your blogpost (only the content above is shown in preview mode)
 - Include images using e.g `[Image Title](/img/posts/2013/customImage.jpg)`
@@ -43,6 +42,15 @@ def foo
   puts 'foo'
 end
 {% endhighlight %}
+```
 
+## Test site locally
 
+Make sure jekyll is installed
+```
+gem install jekyll
+```
+Build the site and serve it on `http://localhost:4000`
+```
+jekyll serve --watch
 ```
