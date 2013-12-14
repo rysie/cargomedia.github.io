@@ -29,9 +29,14 @@ body {
   background-image: url("/img/bg.png");
   background-color: rgba(60, 60, 60, 0.09);
   font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
+  font-size: .9em;
   color: #333333;
   line-height: 1.5;
+}
+@media (min-width: 450px) {
+  body {
+    font-size: 1em;
+  }
 }
 .sheet {
   box-sizing: border-box;
@@ -63,6 +68,12 @@ h5 {
 ul {
   list-style: disc;
   margin-bottom: 15px;
+  padding-left: 25px;
+}
+@media (min-width: 450px) {
+  ul {
+    padding-left: 40px;
+  }
 }
 ul li {
   margin-bottom: 5px;
@@ -77,7 +88,7 @@ input[type=submit] {
   border-radius: 3px;
   color: #ffffff;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 button:hover,
 input[type=submit]:hover {
@@ -187,16 +198,16 @@ strong {
 .logo:hover {
   text-decoration: none;
 }
-.logo:hover .sign .ball {
+.logo:hover .logo-graphic .ball {
   background-color: #333333;
 }
-.logo .sign {
+.logo .logo-graphic {
   display: inline-block;
   width: 51px;
   height: 51px;
   vertical-align: top;
 }
-.logo .sign .ball {
+.logo .logo-graphic .ball {
   float: left;
   width: 14px;
   height: 14px;
@@ -204,60 +215,60 @@ strong {
   border-radius: 50%;
   background-color: #3fb4ff;
 }
-.logo .sign .ball.t1 {
+.logo .logo-graphic .ball.t1 {
   transition: background-color 0.5s;
   -moz-transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
 }
-.logo .sign .ball.t2 {
+.logo .logo-graphic .ball.t2 {
   transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   -webkit-transition: background-color 0.4s;
 }
-.logo .sign .ball.t3 {
+.logo .logo-graphic .ball.t3 {
   transition: background-color 0.1s;
   -moz-transition: background-color 0.1s;
   -webkit-transition: background-color 0.1s;
 }
-.logo .sign .ball.m1 {
+.logo .logo-graphic .ball.m1 {
   transition: background-color 0.9s;
   -moz-transition: background-color 0.9s;
   -webkit-transition: background-color 0.9s;
 }
-.logo .sign .ball.m2 {
+.logo .logo-graphic .ball.m2 {
   transition: background-color 0.5s;
   -moz-transition: background-color 0.5s;
   -webkit-transition: background-color 0.5s;
 }
-.logo .sign .ball.m3 {
+.logo .logo-graphic .ball.m3 {
   transition: background-color 0.7s;
   -moz-transition: background-color 0.7s;
   -webkit-transition: background-color 0.7s;
 }
-.logo .sign .ball.b1 {
+.logo .logo-graphic .ball.b1 {
   transition: background-color 1s;
   -moz-transition: background-color 1s;
   -webkit-transition: background-color 1s;
 }
-.logo .sign .ball.b2 {
+.logo .logo-graphic .ball.b2 {
   transition: background-color 0.2s;
   -moz-transition: background-color 0.2s;
   -webkit-transition: background-color 0.2s;
 }
-.logo .sign .ball.b3 {
+.logo .logo-graphic .ball.b3 {
   transition: background-color 0.6s;
   -moz-transition: background-color 0.6s;
   -webkit-transition: background-color 0.6s;
 }
-.logo .text {
+.logo .logo-text {
   line-height: 1;
 }
-.logo .text span:first-child {
+.logo .logo-text .logo-text-cargo {
   font-weight: 800;
   font-size: 20px;
   margin-right: 2px;
 }
-.logo .text span:last-child {
+.logo .logo-text .logo-text-media {
   font-weight: 400;
   font-size: 27px;
 }
@@ -290,17 +301,17 @@ strong {
     padding: 3px 0;
     float: left;
   }
-  .header .logo .sign {
+  .header .logo .logo-graphic {
     display: inline-block;
     width: 24px;
     height: 24px;
   }
-  .header .logo .sign .ball {
+  .header .logo .logo-graphic .ball {
     width: 7px;
     height: 7px;
     margin: 0 1px 1px 0;
   }
-  .header .logo .text {
+  .header .logo .logo-text {
     position: relative;
     display: inline-block;
     top: -3px;
@@ -336,7 +347,7 @@ strong {
   position: relative;
   display: block;
   padding: 5px 0;
-  font-size: 18px;
+  font-size: 1.1rem;
   text-transform: uppercase;
   color: #333333;
 }
@@ -356,7 +367,7 @@ strong {
   line-height: 18px;
   border-radius: 50%;
   font-weight: 600;
-  font-size: 11px;
+  font-size: 0.6rem;
   text-align: center;
   color: #ffffff;
   text-shadow: 1px 1px #333333;
@@ -365,8 +376,13 @@ strong {
   letter-spacing: normal;
 }
 .article {
-  padding: 30px 12px;
+  padding: 15px 12px;
   margin-bottom: 25px;
+}
+@media (min-width: 450px) {
+  .article {
+    padding: 30px 12px;
+  }
 }
 .article-github .project {
   position: relative;
@@ -428,18 +444,13 @@ strong {
   font-size: 0.6rem;
 }
 .article-blogPreview .post-title {
-  font-size: 1.5rem;
-  font-weight: lighter;
   margin: 0;
-  color: #666666;
 }
 .article-blogPreview .post-title-link {
-  font-size: 1.3rem;
   color: #666666;
 }
 .article-blog .post-title {
   margin: 0;
-  font-size: 26px;
 }
 .article-blog .post-timestamp {
   font-size: 0.8rem;
@@ -468,7 +479,6 @@ strong {
   color: #ffffff;
 }
 .article-post .post-title {
-  font-size: 26px;
   color: #666666;
   margin-bottom: 0;
 }
@@ -476,7 +486,7 @@ strong {
   color: #666666;
 }
 .article-post .post-owner {
-  font-size: 11px;
+  font-size: 0.6rem;
   color: #666666;
 }
 .boxAlternative {
@@ -546,34 +556,34 @@ strong {
 }
 .bigStripe .headline {
   margin: .5em 0 0;
-  font-size: 25px;
+  font-size: 1.6rem;
   font-weight: 300;
   text-shadow: 2px 2px #000000;
 }
 @media (min-width: 450px) {
   .bigStripe .headline {
-    font-size: 6vw;
+    font-size: 6.8vw;
   }
 }
 @media (min-width: 950px) {
   .bigStripe .headline {
-    font-size: 70px;
+    font-size: 4.5rem;
   }
 }
 .bigStripe .catchphrase {
   font-family: 'Bad Script', cursive;
-  font-size: 16px;
+  font-size: 1rem;
   margin: .5em;
   text-shadow: 1px 1px #000000;
 }
 @media (min-width: 450px) {
   .bigStripe .catchphrase {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }
 @media (min-width: 950px) {
   .bigStripe .catchphrase {
-    font-size: 32px;
+    font-size: 2rem;
   }
 }
 .headingStripe {
@@ -583,11 +593,16 @@ strong {
   color: #dddddd;
 }
 .headingStripe .sheet {
-  padding: 0 25px;
+  padding: 0 15px;
+}
+@media (min-width: 700px) {
+  .headingStripe .sheet {
+    padding: 0 25px;
+  }
 }
 .headingStripe h2 {
   display: inline-block;
-  font-size: 28px;
+  font-size: 1.3rem;
   font-weight: 400;
   margin: 0 20px 0 0;
   color: #f7f7f7;
@@ -596,16 +611,32 @@ strong {
 .headingStripe h2 strong {
   text-transform: uppercase;
 }
+@media (min-width: 450px) {
+  .headingStripe h2 {
+    font-size: 1.7rem;
+  }
+}
 .headingStripe .subtitle {
   display: inline-block;
-  font-size: 18px;
+  font-size: .9rem;
   font-family: 'Bad Script', cursive;
   text-shadow: 1px 1px #000000;
 }
+@media (min-width: 450px) {
+  .headingStripe .subtitle {
+    font-size: 1.1rem;
+  }
+}
 .rainbow {
   position: relative;
-  height: 6px;
-  bottom: 6px;
+  height: 4px;
+  bottom: 4px;
+}
+@media (min-width: 450px) {
+  .rainbow {
+    height: 6px;
+    bottom: 6px;
+  }
 }
 .rainbow .rainbow-stripe {
   float: left;
@@ -762,7 +793,7 @@ strong {
   margin: 0 0 4px 0;
 }
 .businessCard .content .mission {
-  font-size: 14px;
+  font-size: 0.8rem;
   font-family: 'Bad Script', cursive;
   color: #666666;
   margin: 0 0 3px 0;
