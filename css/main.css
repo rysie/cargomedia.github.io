@@ -53,6 +53,9 @@ p {
 p:last-child {
   margin: 0;
 }
+p.solitary {
+  margin: 35px 0;
+}
 h1,
 h2,
 h3,
