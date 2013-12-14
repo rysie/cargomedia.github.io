@@ -173,9 +173,14 @@ strong {
 @media (min-width: 700px) {
   
 }
-@media (min-width: 800px) {
+@media (min-width: 450px) {
   .columns .column3 {
     float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 700px) {
+  .columns .column3 {
     width: 33.33%;
   }
 }
@@ -755,7 +760,7 @@ strong {
   background-image: url(/img/animal/animal_empty.svg);
 }
 .businessCard .content {
-  margin-left: 46px;
+  margin-left: 42px;
 }
 .businessCard .content h4 {
   font-weight: 600;
