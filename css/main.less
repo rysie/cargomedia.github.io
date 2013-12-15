@@ -245,8 +245,12 @@ strong {
 	.column3 {
 		.column;
 
-		@media (min-width: 800px) {
+		@media (min-width: @breakpointSmall) {
 			float: left;
+			width: 50%;
+		}
+
+		@media (min-width: @breakpointMedium) {
 			width: 33.33%;
 		}
 	}
@@ -417,7 +421,7 @@ strong {
 	text-transform: uppercase;
 	color: @colorFg;
 
-	@media (min-width: 450px) {
+	@media (min-width: @breakpointSmall) {
 		letter-spacing: 3px;
 	}
 
@@ -885,7 +889,7 @@ strong {
 		}
 	}
 	.content {
-		margin-left: 46px;
+		margin-left: 42px;
 
 		h4 {
 			font-weight: 600;
