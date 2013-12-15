@@ -13,7 +13,7 @@ Static [jekyll](http://jekyllrb.com/) powered company website
 - Add a file with naming convention date-title.markdown (e.g. `2013-2-22-New-Post.markdown`) into `_posts/`
 - Add post meta information (YAML), followed by markdown
 - Use `<!--more-->` to slice your blogpost (only the content above is shown in preview mode)
-- Include images using e.g `[Image Title](/img/posts/2013/customImage.jpg)`
+- Include images using e.g `![Image Title](/img/posts/2013/customImage.jpg)`
 - Include code using [Liquid](http://docs.shopify.com/themes/liquid-basics) syntax
 
 ### Example
@@ -34,7 +34,7 @@ Your Blogpost goes here...
 ...rest of the blogpost goes here.
 
 // Images
-[Image Title](/img/posts/2013/customImage.jpg)
+![Image Title](/img/posts/2013/customImage.jpg)
 
 // Code snippets
 {% highlight ruby %}
