@@ -8,7 +8,7 @@ tags: [monitoring,bipbip,saas,devops]
 
 ### Choosing a server monitoring SaaS provider
 Having graphs available for historical and current trends for critical service metrics is quite important in my experience.
-They *help understand performance bottlenecks* as well as interconnections between different parts of a multi-server infrastructure.
+They help understand *performance bottlenecks* as well as interconnections between different parts of a multi-server infrastructure.
 We've decided to replace our [Cacti](http://www.cacti.net/) installation with a "cloud" solution mainly due to the complexity of configuring cacti in an automated manner.
 ![Cacti](/img/posts/2013/cacti.png)
 While [Percona's cacti templates](http://www.percona.com/doc/percona-monitoring-plugins/) are great, setting them up requires manual intervention.
