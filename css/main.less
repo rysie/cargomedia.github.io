@@ -134,9 +134,13 @@ body {
 	background-image: url("/img/bg.png");
 	background-color: @bgOverlay;
 	font-family: @fontDefault;
-	font-size: @fontSize;
+	font-size: .9em;
 	color: @colorFg;
 	line-height: 1.5;
+
+	@media (min-width: @breakpointSmall) {
+		font-size: @fontSize;
+	}
 }
 
 .sheet {
@@ -173,6 +177,11 @@ h1, h2, h3, h4, h5 {
 ul {
 	list-style: disc;
 	margin-bottom: 15px;
+	padding-left: 25px;
+
+	@media (min-width: @breakpointSmall) {
+		padding-left: 40px;
+	}
 
 	li {
 		margin-bottom: 5px;
@@ -183,7 +192,7 @@ button, input[type=submit] {
 	-webkit-appearance: none;
 	.button(@blue);
 	cursor: pointer;
-	font-size: 14px;
+	font-size: @fontSizeSmall;
 }
 
 img {
@@ -264,13 +273,13 @@ strong {
 	&:hover {
 		text-decoration: none;
 
-		.sign .ball {
+		.logo-graphic .ball {
 			background-color: @colorFg;
 
 		}
 	}
 
-	.sign {
+	.logo-graphic {
 		display: inline-block;
 		width: 51px;
 		height: 51px;
@@ -314,15 +323,15 @@ strong {
 		}
 	}
 
-	.text {
+	.logo-text {
 		line-height: 1;
 
-		span:first-child {
+		.logo-text-cargo {
 			font-weight: 800;
 			font-size: 20px;
 			margin-right: 2px;
 		}
-		span:last-child {
+		.logo-text-media {
 			font-weight: 400;
 			font-size: 27px;
 		}
@@ -360,7 +369,7 @@ strong {
 			padding: 3px 0;
 			float: left;
 
-			.sign {
+			.logo-graphic {
 				display: inline-block;
 				width: 24px;
 				height: 24px;
@@ -372,7 +381,7 @@ strong {
 				}
 			}
 
-			.text {
+			.logo-text {
 				position: relative;
 				display: inline-block;
 				top: -3px;
@@ -417,7 +426,7 @@ strong {
 	position: relative;
 	display: block;
 	padding: 5px 0;
-	font-size: 18px;
+	font-size: 1.1rem;
 	text-transform: uppercase;
 	color: @colorFg;
 
@@ -437,7 +446,7 @@ strong {
 		line-height: 18px;
 		border-radius: 50%;
 		font-weight: 600;
-		font-size: 11px;
+		font-size: @fontSizeTiny;
 		text-align: center;
 		color: @colorBg;
 		text-shadow: 1px 1px @colorFg;
@@ -448,8 +457,12 @@ strong {
 }
 
 .article {
-	padding: 30px 12px;
+	padding: 15px 12px;
 	margin-bottom: 25px;
+
+	@media (min-width: @breakpointSmall) {
+		padding: 30px 12px;
+	}
 }
 
 .article-github {
@@ -526,14 +539,10 @@ strong {
 	}
 
 	.post-title {
-		font-size: 1.5rem;
-		font-weight: lighter;
 		margin: 0;
-		color: @colorFgShy;
 	}
 
 	.post-title-link {
-		font-size: 1.3rem;
 		color: @colorFgShy;
 	}
 }
@@ -541,7 +550,6 @@ strong {
 .article-blog {
 	.post-title {
 		margin: 0;
-		font-size: 26px;
 	}
 
 	.post-timestamp {
@@ -581,7 +589,6 @@ strong {
 
 .article-post {
 	.post-title {
-		font-size: 26px;
 		color: @colorFgShy;
 		margin-bottom: 0;
 	}
@@ -591,7 +598,7 @@ strong {
 	}
 
 	.post-owner {
-		font-size: 11px;
+		font-size: @fontSizeTiny;
 		color: @colorFgShy;
 	}
 }
@@ -664,31 +671,31 @@ strong {
 
 	.headline {
 		margin: .5em 0 0;
-		font-size: 25px;
+		font-size: 1.6rem;
 		font-weight: 300;
 		text-shadow: 2px 2px darken(@colorFg, 20);
 
 		@media (min-width: @breakpointSmall) {
-			font-size: 6vw;
+			font-size: 6.8vw;
 		}
 
 		@media (min-width: @siteWidth) {
-			font-size: 70px;
+			font-size: 4.5rem;
 		}
 	}
 
 	.catchphrase {
 		font-family: @fontSpecial;
-		font-size: 16px;
+		font-size: 1rem;
 		margin: .5em;
 		text-shadow: 1px 1px darken(@colorFg, 20);
 
 		@media (min-width: @breakpointSmall) {
-			font-size: 3vw;
+			font-size: 4vw;
 		}
 
 		@media (min-width: @siteWidth) {
-			font-size: 32px;
+			font-size: 2rem;
 		}
 	}
 }
@@ -700,12 +707,16 @@ strong {
 	color: @colorFgAlternative;
 
 	.sheet {
-		padding: 0 25px;
+		padding: 0 15px;
+
+		@media (min-width: @breakpointMedium) {
+			padding: 0 25px;
+		}
 	}
 
 	h2 {
 		display: inline-block;
-		font-size: 28px;
+		font-size: 1.3rem;
 		font-weight: 400;
 		margin: 0 20px 0 0;
 		color: lighten(@colorFgAlternative, 10);
@@ -714,20 +725,33 @@ strong {
 		strong {
 			text-transform: uppercase;
 		}
+
+		@media (min-width: @breakpointSmall) {
+			font-size: 1.7rem;
+		}
 	}
 
 	.subtitle {
 		display: inline-block;
-		font-size: 18px;
+		font-size: .9rem;
 		font-family: @fontSpecial;
 		text-shadow: 1px 1px darken(@colorFg, 20);
+
+		@media (min-width: @breakpointSmall) {
+			font-size: 1.1rem;
+		}
 	}
 }
 
 .rainbow {
 	position: relative;
-	height: 6px;
-	bottom: 6px;
+	height: 4px;
+	bottom: 4px;
+
+	@media (min-width: @breakpointSmall) {
+		height: 6px;
+		bottom: 6px;
+	}
 
 	.rainbow-stripe {
 		float: left;
@@ -896,7 +920,7 @@ strong {
 			margin: 0 0 4px 0;
 		}
 		.mission {
-			font-size: 14px;
+			font-size: @fontSizeSmall;
 			font-family: @fontSpecial;
 			color: @colorFgShy;
 			margin: 0 0 3px 0;
