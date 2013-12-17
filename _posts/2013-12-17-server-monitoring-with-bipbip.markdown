@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Server Monitoring with bipbip and CopperEgg"
-date: 2013-12-15
+date: 2013-12-17
 owner: Reto
 tags: [monitoring,bipbip,saas,devops]
 ---
