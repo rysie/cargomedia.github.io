@@ -697,7 +697,7 @@ strong {
 .contact.google {
   background-image: url(/img/icon/socialMedia-light-04.svg);
 }
-.contact.linkedIn {
+.contact.linkedin {
   background-image: url(/img/icon/socialMedia-light-05.svg);
 }
 .contact.dark.twitter {
@@ -712,7 +712,7 @@ strong {
 .contact.dark.google {
   background-image: url(/img/icon/socialMedia-dark-04.svg);
 }
-.contact.dark.linkedIn {
+.contact.dark.linkedin {
   background-image: url(/img/icon/socialMedia-dark-05.svg);
 }
 .businessCard {
