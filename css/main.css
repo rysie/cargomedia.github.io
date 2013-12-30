@@ -43,7 +43,7 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   margin: 0 auto;
-  max-width: 950px;
+  max-width: 900px;
 }
 a {
   text-decoration: none;
@@ -431,11 +431,45 @@ strong {
 .post-content {
   margin-bottom: 12px;
 }
+.post-content p {
+  font-family: 'Droid Serif', serif;
+  margin: .5em 0 1.5em;
+}
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5 {
+  font-family: 'Droid Serif', serif;
+  font-weight: bold;
+}
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+  border-bottom: 1px solid #b9b9b9;
+  color: #404040;
+}
+.post-content h1:not(:first-child) {
+  margin-top: 2.8em;
+}
+.post-content h2:not(:first-child) {
+  margin-top: 2.6em;
+}
+.post-content h3:not(:first-child) {
+  margin-top: 2.5em;
+}
+.post-content ul,
+.post-content ol {
+  margin: 1em 0 2em;
+}
+.post-content li {
+  margin: .5em 0;
+}
 .post-content img {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  margin: 8px 0;
+  margin: 1.5em 0;
   padding: 2px;
   border: 1px solid rgba(51, 51, 51, 0.09999999999999998);
   background-color: #fefefe;
@@ -443,7 +477,7 @@ strong {
   max-height: 80%;
 }
 .post-content iframe {
-  margin: 10px 0;
+  margin: 1.5em 0;
 }
 .article-blogPreview .post {
   margin-bottom: 12px;
@@ -514,13 +548,6 @@ strong {
   background-color: transparent;
   box-shadow: none;
 }
-.boxAlternative h1,
-.boxAlternative h2,
-.boxAlternative h3,
-.boxAlternative h4,
-.boxAlternative h5 {
-  color: #666666;
-}
 .article-career .boxAlternative {
   position: relative;
 }
@@ -539,15 +566,16 @@ strong {
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
 }
-@media (min-width: 950px) {
+@media (min-width: 900px) {
   .article-career .boxAlternative .clippy {
     display: block;
   }
 }
 .highlight {
-  border: 1px dashed #b9b9b9;
+  border: 1px solid #b9b9b9;
   padding: 0 12px;
-  margin: 12px 0;
+  margin: 1em 0 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .bigStripe {
   margin-top: 20px;
@@ -560,7 +588,7 @@ strong {
   background-image: url("/img/office.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 950px auto;
+  background-size: 900px auto;
 }
 .bigStripe .headline {
   margin: .5em 0 0;
@@ -573,7 +601,7 @@ strong {
     font-size: 6.8vw;
   }
 }
-@media (min-width: 950px) {
+@media (min-width: 900px) {
   .bigStripe .headline {
     font-size: 4.5rem;
   }
@@ -589,7 +617,7 @@ strong {
     font-size: 4vw;
   }
 }
-@media (min-width: 950px) {
+@media (min-width: 900px) {
   .bigStripe .catchphrase {
     font-size: 2rem;
   }

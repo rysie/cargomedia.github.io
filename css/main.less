@@ -19,7 +19,7 @@
 @fontSizeSmall: .8rem;
 @fontSizeTiny: .6rem;
 
-@siteWidth: 950px;
+@siteWidth: 900px;
 @breakpointSmall: 450px;
 @breakpointMedium: 700px;
 
@@ -514,9 +514,45 @@ strong {
 .post-content {
 	margin-bottom: 12px;
 
+	p {
+		font-family: 'Droid Serif', serif;
+		margin: .5em 0 1.5em;
+	}
+
+	h1, h2, h3, h4, h5 {
+		font-family: 'Droid Serif', serif;
+		font-weight: bold;
+	}
+
+	h1, h2, h3 {
+		border-bottom: 1px solid @colorFgBorder;
+		color: lighten(@colorFg, 5);
+	}
+
+
+	h1:not(:first-child) {
+		margin-top: 2.8em;
+	}
+
+	h2:not(:first-child) {
+		margin-top: 2.6em;
+	}
+
+	h3:not(:first-child) {
+		margin-top: 2.5em;
+	}
+
+	ul, ol {
+		margin: 1em 0 2em;
+	}
+
+	li {
+		margin: .5em 0;
+	}
+
 	img {
 		.box-sizing(border-box);
-		margin: 8px 0;
+		margin: 1.5em 0;
 		padding: 2px;
 		border: 1px solid fadeout(@colorFg, 90);
 		background-color: rgb(254, 254, 254);
@@ -525,7 +561,7 @@ strong {
 	}
 
 	iframe {
-		margin: 10px 0;
+		margin: 1.5em 0;
 	}
 }
 
@@ -601,6 +637,10 @@ strong {
 		font-size: @fontSizeTiny;
 		color: @colorFgShy;
 	}
+
+	.post-content {
+
+	}
 }
 
 .boxAlternative {
@@ -618,10 +658,6 @@ strong {
 	&.transparent {
 		background-color: transparent;
 		box-shadow: none;
-	}
-
-	h1, h2, h3, h4, h5 {
-		color: @colorFgShy;
 	}
 }
 
@@ -650,9 +686,10 @@ strong {
 }
 
 .highlight {
-	border: 1px dashed @colorFgBorder;
+	border: 1px solid @colorFgBorder;
 	padding: 0 12px;
-	margin: 12px 0;
+	margin: 1em 0 2em;
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 .bigStripe {
