@@ -531,7 +531,6 @@ strong {
 		color: lighten(@colorFg, 5);
 	}
 
-
 	h1:not(:first-child) {
 		margin-top: 2.8em;
 	}
@@ -564,6 +563,20 @@ strong {
 
 	iframe {
 		margin: 1.5em 0;
+	}
+
+	> :not(.highlight) code {
+		display: inline-block;
+		background-color: @colorBg;
+		border: 1px solid @colorFgBorder;
+		padding: 0 4px;
+	}
+
+	.highlight {
+		border: 1px solid @colorFgBorder;
+		padding: 0 12px;
+		margin: 1em 0 2em;
+		box-shadow: 0 0 10px rgba(0,0,0,.12);
 	}
 }
 
@@ -685,13 +698,6 @@ strong {
 			}
 		}
 	}
-}
-
-.highlight {
-	border: 1px solid @colorFgBorder;
-	padding: 0 12px;
-	margin: 1em 0 2em;
-	box-shadow: 0 0 10px rgba(0,0,0,.2);
 }
 
 .bigStripe {

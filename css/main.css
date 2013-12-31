@@ -480,6 +480,18 @@ strong {
 .post-content iframe {
   margin: 1.5em 0;
 }
+.post-content > :not(.highlight) code {
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid #b9b9b9;
+  padding: 0 4px;
+}
+.post-content .highlight {
+  border: 1px solid #b9b9b9;
+  padding: 0 12px;
+  margin: 1em 0 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+}
 .article-blogPreview .post {
   margin-bottom: 12px;
 }
@@ -571,12 +583,6 @@ strong {
   .article-career .boxAlternative .clippy {
     display: block;
   }
-}
-.highlight {
-  border: 1px solid #b9b9b9;
-  padding: 0 12px;
-  margin: 1em 0 2em;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .bigStripe {
   margin-top: 20px;
