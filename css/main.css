@@ -419,6 +419,14 @@ strong {
   list-style: none;
 }
 .post-timestamp {
+  font-size: 0.6rem;
+  color: #666666;
+}
+.post-title {
+  margin: 0;
+}
+.post-owner {
+  font-size: 0.6rem;
   color: #666666;
 }
 .post-tags {
@@ -498,20 +506,8 @@ strong {
 .article-blogPreview .post {
   margin-bottom: 12px;
 }
-.article-blogPreview .post-timestamp {
-  font-size: 0.6rem;
-}
-.article-blogPreview .post-title {
-  margin: 0;
-}
 .article-blogPreview .post-title-link {
   color: #666666;
-}
-.article-blog .post-title {
-  margin: 0;
-}
-.article-blog .post-timestamp {
-  font-size: 0.8rem;
 }
 .article-blog .post-title-link {
   color: #666666;
@@ -539,13 +535,6 @@ strong {
 .article-post .post-title {
   color: #666666;
   margin-bottom: 0;
-}
-.article-post .post-timestamp {
-  color: #666666;
-}
-.article-post .post-owner {
-  font-size: 0.6rem;
-  color: #666666;
 }
 .boxAlternative {
   position: relative;
