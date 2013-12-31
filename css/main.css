@@ -431,9 +431,6 @@ strong {
 .post-content {
   margin-bottom: 12px;
 }
-.post-content > :not(.post-more) {
-  font-family: 'Droid Serif', serif;
-}
 .post-content p {
   margin: .5em 0 1.5em;
 }
