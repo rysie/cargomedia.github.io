@@ -431,8 +431,10 @@ strong {
 .post-content {
   margin-bottom: 12px;
 }
-.post-content p {
+.post-content > :not(.post-more) {
   font-family: 'Droid Serif', serif;
+}
+.post-content p {
   margin: .5em 0 1.5em;
 }
 .post-content h1,
@@ -440,7 +442,6 @@ strong {
 .post-content h3,
 .post-content h4,
 .post-content h5 {
-  font-family: 'Droid Serif', serif;
   font-weight: bold;
 }
 .post-content h1,
