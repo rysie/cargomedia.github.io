@@ -481,10 +481,16 @@ strong {
   margin: 1.5em 0;
 }
 .post-content > :not(.highlight) code {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   display: inline-block;
+  max-width: 100%;
+  overflow-wrap: break-word;
   background-color: #ffffff;
   border: 1px solid #b9b9b9;
   padding: 0 4px;
+  line-height: 1.3;
 }
 .post-content .highlight {
   border: 1px solid #b9b9b9;
