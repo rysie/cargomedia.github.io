@@ -489,7 +489,6 @@ strong {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  display: inline-block;
   max-width: 100%;
   overflow-wrap: break-word;
   background-color: #ffffff;
