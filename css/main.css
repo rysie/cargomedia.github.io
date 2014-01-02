@@ -403,7 +403,7 @@ strong {
 }
 .tags {
   font-size: 0.8rem;
-  color: #f1861e;
+  color: #808080;
 }
 .tags .tag {
   margin-right: 4px;
@@ -418,23 +418,15 @@ strong {
   padding: 0;
   list-style: none;
 }
-.post-timestamp {
-  font-size: 0.6rem;
-  color: #666666;
-}
 .post-title {
   margin: 0;
 }
-.post-owner {
+.post-meta {
   font-size: 0.6rem;
-  color: #666666;
+  color: #808080;
 }
 .post-tags {
   margin-bottom: 4px;
-}
-.post-owner {
-  font-size: 0.6rem;
-  color: #666666;
 }
 .post-content {
   margin-bottom: 12px;

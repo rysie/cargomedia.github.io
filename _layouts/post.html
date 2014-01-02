@@ -5,7 +5,8 @@ comments: true
 
 <div class="article article-post sheet">
 	<div class="boxAlternative">
-		{% if page.date %}<time class="post-timestamp">{{ page.date | date_to_string }}</time>{% endif %}
+		<p class="post-meta">{% if page.date %}<time>{{ page.date | date_to_string }}</time>{% endif %} {% if page.owner %}by {{ page.owner }}{% endif %}</p>
+
 		<h2 class="post-title">{{ page.title }}</h2>
 		{% if page.tags %}
 			<p class="post-tags tags nowrap">
@@ -14,7 +15,6 @@ comments: true
 				{% endfor %}
 			</p>
 		{% endif %}
-		{% if page.owner %}<p class="post-owner">by {{ page.owner }}</p>{% endif %}
 
 		<div class="post-content">
 			{{ content }}

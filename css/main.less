@@ -479,7 +479,7 @@ strong {
 
 .tags {
 	font-size: @fontSizeSmall;
-	color: @orange;
+	color: lighten(@colorFgShy, 10);
 
 	.tag {
 		margin-right: 4px;
@@ -498,27 +498,17 @@ strong {
 	list-style: none;
 }
 
-.post-timestamp {
-	font-size: @fontSizeTiny;
-	color: @colorFgShy;
-}
-
 .post-title {
 	margin: 0;
 }
 
-.post-owner {
+.post-meta {
 	font-size: @fontSizeTiny;
-	color: @colorFgShy;
+	color: lighten(@colorFgShy, 10);
 }
 
 .post-tags {
 	margin-bottom: 4px;
-}
-
-.post-owner {
-	font-size: @fontSizeTiny;
-	color: @colorFgShy;
 }
 
 .post-content {

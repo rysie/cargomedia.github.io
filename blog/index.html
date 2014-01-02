@@ -14,7 +14,7 @@ slug: blog
 	<ul class="posts">
 		{% for post in paginator.posts %}
 		<li class="post boxAlternative">
-			{% if post.date %}<time class="post-timestamp">{{ post.date | date_to_string }}</time>{% endif %}
+			<p class="post-meta">{% if post.date %}<time>{{ post.date | date_to_string }}</time>{% endif %} {% if post.owner %}by {{ post.owner }}{% endif %}</p>
 			<h2 class="post-title"><a href="{{ post.url }}" class="post-title-link">{{ post.title }}</a></h2>
 			{% if post.tags %}
 			<p class="post-tags tags nowrap">
@@ -23,7 +23,6 @@ slug: blog
 				{% endfor %}
 			</p>
 			{% endif %}
-			{% if post.owner %}<p class="post-owner">by {{ post.owner }}</p>{% endif %}
 			<div class="post-content">
 				{% if post.content contains '<!--more-->' %}
 				{{ post.content | split:'<!--more-->' | first }}
