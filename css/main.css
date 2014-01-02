@@ -434,18 +434,21 @@ strong {
 .post-content p {
   margin: .5em 0 1.5em;
 }
+.post-content strong {
+  color: #666666;
+}
 .post-content h1,
 .post-content h2,
 .post-content h3,
 .post-content h4,
 .post-content h5 {
   font-weight: bold;
+  color: #666666;
 }
 .post-content h1,
 .post-content h2,
 .post-content h3 {
   border-bottom: 1px solid #b9b9b9;
-  color: #404040;
 }
 .post-content h1:not(:first-child) {
   margin-top: 2.8em;

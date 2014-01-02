@@ -518,13 +518,17 @@ strong {
 		margin: .5em 0 1.5em;
 	}
 
+	strong {
+		color: @colorFgShy;
+	}
+
 	h1, h2, h3, h4, h5 {
 		font-weight: bold;
+		color: @colorFgShy;
 	}
 
 	h1, h2, h3 {
 		border-bottom: 1px solid @colorFgBorder;
-		color: lighten(@colorFg, 5);
 	}
 
 	h1:not(:first-child) {
