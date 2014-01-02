@@ -421,7 +421,8 @@ strong {
 .post-title {
   margin: 0;
 }
-.post-meta {
+.post-meta,
+.post-timestamp {
   font-size: 0.6rem;
   color: #808080;
 }
