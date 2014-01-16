@@ -1,3 +1,8 @@
+- title: CM Framework
+  link: CM
+  tags: [framework, php, mvc]
+  description: In-house PHP framework - Desigend for high-performing, scalable web-applications.
+
 - title: bipbip
   link: bipbip
   tags: [monitoring, ruby]
