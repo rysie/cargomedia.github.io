@@ -1,0 +1,29 @@
+- title: CM Framework
+  link: CM
+  tags: [framework, php, mvc]
+  description: In-house PHP framework - Desigend for high-performing, scalable web-applications.
+
+- title: bipbip
+  link: bipbip
+  tags: [monitoring, ruby]
+  description: Agent to collect server metrics (memcached, nginx, mysql etc) and send them to the CopperEgg RevealMetrics platform.
+
+- title: puppet-packages
+  link: puppet-packages
+  tags: [devops, puppet]
+  description: Reusable puppet modules for Debian.
+
+- title: socket-redis
+  link: socket-redis
+  tags: [websockets, node.js, redis]
+  description: WebSocket pub/sub server and client (with SockJS), exposing an API over Redis.
+
+- title: vagrant-boxes
+  link: vagrant-boxes
+  tags: [vagrant, packer]
+  description: Generate Vagrant boxes with packer.
+
+- title: github-issues
+  link: github-issues
+  tags: [git, workflow]
+  description: gi is a command line tool to CRUD github issues. It maps every issue to a branch issue-'issue-number'.
