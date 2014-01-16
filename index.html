@@ -47,26 +47,17 @@ slug: home
 </div>
 <article class="article article-github sheet">
 	<p>These are some of our public side-projects which helped us solve specific problems.</p>
-	<div class="project boxAlternative">
-		<a class="project-title" href="https://github.com/cargomedia/bipbip">bipbip</a> <span class="tags"><span class="tag">monitoring</span><span class="tag">ruby</span></span>
-		<p>Agent to collect server metrics (memcached, nginx, mysql etc) and send them to the CopperEgg RevealMetrics platform.</p>
-	</div>
-	<div class="project boxAlternative">
-		<a class="project-title" href="https://github.com/cargomedia/puppet-packages">puppet-packages</a> <span class="tags"><span class="tag">devops</span> <span class="tag">puppet</span></span>
-		<p>Reusable puppet modules for Debian.</p>
-	</div>
-	<div class="project boxAlternative">
-		<a class="project-title" href="https://github.com/cargomedia/socket-redis">socket-redis</a> <span class="tags"><span class="tag">websockets</span> <span class="tag">node.js</span> <span class="tag">redis</span></span>
-		<p>WebSocket pub/sub server and client (with SockJS), exposing an API over Redis.</p>
-	</div>
-	<div class="project boxAlternative">
-		<a class="project-title" href="https://github.com/cargomedia/vagrant-boxes">vagrant-boxes</a> <span class="tags"><span class="tag">vagrant</span> <span class="tag">packer</span></span>
-		<p>Generate Vagrant boxes with packer.</p>
-	</div>
-	<div class="project boxAlternative">
-		<a class="project-title" href="https://github.com/cargomedia/github-issues">github-issues</a> <span class="tags"><span class="tag">git</span> <span class="tag">workflow</span></span>
-		<p>gi is a command line tool to CRUD github issues. It maps every issue to a branch issue-'issue-number'.</p>
-	</div>
+	{% for repository in site.data.git-repositories %}
+		<div class="project boxAlternative">
+			<a class="project-title" href="https://github.com/cargomedia/{{ repository.link }}">{{ repository.title }}</a>
+			<span class="tags">
+				{% for tag in repository.tags %}
+					<span class="tag">{{ tag }}</span>
+				{% endfor %}
+			</span>
+			<p>{{ repository.description }}</p>
+		</div>
+	{% endfor %}
 </article>
 
 <div class="headingStripe">
