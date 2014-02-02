@@ -1,0 +1,449 @@
+/* 
+    Created on : 2014-02-01, 17:09:39
+    Author     : Rysie
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2014-02-01, 17:09:50
+    Author     : Rysie
+*/
+@-webkit-keyframes background-move {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -350px; } }
+
+@-moz-keyframes background-move {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -350px; } }
+
+@-o-keyframes background-move {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -350px; } }
+
+@keyframes background-move {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -350px; } }
+
+@-webkit-keyframes background-moveM {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -250px; } }
+
+@-moz-keyframes background-moveM {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -250px; } }
+
+@-o-keyframes background-moveM {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -250px; } }
+
+@keyframes background-moveM {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -250px; } }
+
+@-webkit-keyframes background-moveS {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -150px; } }
+
+@-moz-keyframes background-moveS {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -150px; } }
+
+@-o-keyframes background-moveS {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -150px; } }
+
+@keyframes background-moveS {
+  0% {
+    background-position: 0px 0px; }
+
+  100% {
+    background-position: 0px -150px; } }
+
+@-webkit-keyframes ship-anim {
+  0% {
+    background-position: 0 0; }
+
+  100% {
+    background-position: 111px 0px; } }
+
+@-moz-keyframes ship-anim {
+  0% {
+    background-position: 0 0; }
+
+  100% {
+    background-position: 111px 0px; } }
+
+@-o-keyframes ship-anim {
+  0% {
+    background-position: 0 0; }
+
+  100% {
+    background-position: 111px 0px; } }
+
+@keyframes ship-anim {
+  0% {
+    background-position: 0 0; }
+
+  100% {
+    background-position: 111px 0px; } }
+
+@-webkit-keyframes ship-animM {
+  0% {
+    background-position: 0 0; }
+
+  100% {
+    background-position: 71px 0px; } }
+
+@-moz-keyframes ship-animM {
+  0% {
+    background-position: 0 0; }
+
+  100% {
+    background-position: 71px 0px; } }
+
+@-o-keyframes ship-animM {
+  0% {
+    background-position: 0 0; }
+
+  100% {
+    background-position: 71px 0px; } }
+
+@keyframes ship-animM {
+  0% {
+    background-position: 0 0; }
+
+  100% {
+    background-position: 71px 0px; } }
+
+@-webkit-keyframes ship-animS {
+  0% {
+    background-position: 0 0; }
+
+  100% {
+    background-position: 51px 0px; } }
+
+@-moz-keyframes ship-animS {
+  0% {
+    background-position: 0 0; }
+
+  100% {
+    background-position: 51px 0px; } }
+
+@-o-keyframes ship-animS {
+  0% {
+    background-position: 0 0; }
+
+  100% {
+    background-position: 51px 0px; } }
+
+@keyframes ship-animS {
+  0% {
+    background-position: 0 0; }
+
+  100% {
+    background-position: 51px 0px; } }
+
+@-webkit-keyframes all-ships-anim {
+  0% {
+    margin-left: 0%; }
+
+  33% {
+    margin-left: -18%; }
+
+  66% {
+    margin-left: 0%; }
+
+  100% {
+    margin-left: 18%; } }
+
+@-moz-keyframes all-ships-anim {
+  0% {
+    margin-left: 0%; }
+
+  33% {
+    margin-left: -18%; }
+
+  66% {
+    margin-left: 0%; }
+
+  100% {
+    margin-left: 18%; } }
+
+@-o-keyframes all-ships-anim {
+  0% {
+    margin-left: 0%; }
+
+  33% {
+    margin-left: -18%; }
+
+  66% {
+    margin-left: 0%; }
+
+  100% {
+    margin-left: 18%; } }
+
+@keyframes all-ships-anim {
+  0% {
+    margin-left: 0%; }
+
+  33% {
+    margin-left: -18%; }
+
+  66% {
+    margin-left: 0%; }
+
+  100% {
+    margin-left: 18%; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\0000370}}
+.spaceInvaders {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  text-align: center;
+  background: black;
+  overflow: hidden; }
+  @media (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\0000370}}
+    .spaceInvaders {
+      height: 525px; } }
+  @media (max-width: 450px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\0000370}}
+    .spaceInvaders {
+      height: 337.5px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\0000386}}
+  .spaceInvaders .bg_layer_1 {
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    background: url("/task/error-page/solutions/rysie/images/stars_1.png");
+    background-size: 350px;
+    -webkit-animation: background-move 8s infinite linear;
+    -moz-animation: background-move 8s infinite linear;
+    -o-animation: background-move 8s infinite linear;
+    animation: background-move 8s infinite linear; }
+    @media (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\0000386}}
+      .spaceInvaders .bg_layer_1 {
+        background-size: 250px;
+        height: 525px;
+        -webkit-animation: background-moveM 8s infinite linear;
+        -moz-animation: background-moveM 8s infinite linear;
+        -o-animation: background-moveM 8s infinite linear;
+        animation: background-moveM 8s infinite linear; } }
+    @media (max-width: 450px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\0000386}}
+      .spaceInvaders .bg_layer_1 {
+        background-size: 150px;
+        height: 337.5px;
+        -webkit-animation: background-moveS 8s infinite linear;
+        -moz-animation: background-moveS 8s infinite linear;
+        -o-animation: background-moveS 8s infinite linear;
+        animation: background-moveS 8s infinite linear; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003107}}
+  .spaceInvaders .bg_layer_2 {
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    background: url("/task/error-page/solutions/rysie/images/stars_2.png");
+    background-size: 350px;
+    -webkit-animation: background-move 5s infinite linear;
+    -moz-animation: background-move 5s infinite linear;
+    -o-animation: background-move 5s infinite linear;
+    animation: background-move 5s infinite linear; }
+    @media (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003107}}
+      .spaceInvaders .bg_layer_2 {
+        background-size: 250px;
+        height: 525px;
+        -webkit-animation: background-moveM 5s infinite linear;
+        -moz-animation: background-moveM 5s infinite linear;
+        -o-animation: background-moveM 5s infinite linear;
+        animation: background-moveM 5s infinite linear; } }
+    @media (max-width: 450px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003107}}
+      .spaceInvaders .bg_layer_2 {
+        background-size: 150px;
+        height: 337.5px;
+        -webkit-animation: background-moveS 5s infinite linear;
+        -moz-animation: background-moveS 5s infinite linear;
+        -o-animation: background-moveS 5s infinite linear;
+        animation: background-moveS 5s infinite linear; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003132}}
+  .spaceInvaders .spaceShips {
+    margin-top: 15px;
+    text-align: left;
+    display: inline-block;
+    -webkit-animation: all-ships-anim 15s infinite alternate steps(20);
+    -moz-animation: all-ships-anim 15s infinite alternate steps(20);
+    -o-animation: all-ships-anim 15s infinite alternate steps(20);
+    animation: all-ships-anim 15s infinite alternate steps(20); }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003138}}
+    .spaceInvaders .spaceShips .ship {
+      width: 55px;
+      height: 50px;
+      margin-right: 15px;
+      -webkit-animation: ship-anim 1s infinite steps(2);
+      -moz-animation: ship-anim 1s infinite steps(2);
+      -o-animation: ship-anim 1s infinite steps(2);
+      animation: ship-anim 1s infinite steps(2);
+      display: block;
+      float: left;
+      background-position: 0 0; }
+      @media (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003138}}
+        .spaceInvaders .spaceShips .ship {
+          width: 35px;
+          height: 30px;
+          margin-right: 7px;
+          -webkit-animation: ship-animM 1s infinite steps(2);
+          -moz-animation: ship-animM 1s infinite steps(2);
+          -o-animation: ship-animM 1s infinite steps(2);
+          animation: ship-animM 1s infinite steps(2); } }
+      @media (max-width: 450px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003138}}
+        .spaceInvaders .spaceShips .ship {
+          width: 25px;
+          height: 20px;
+          margin-right: 3px;
+          -webkit-animation: ship-animS 1s infinite steps(2);
+          -moz-animation: ship-animS 1s infinite steps(2);
+          -o-animation: ship-animS 1s infinite steps(2);
+          animation: ship-animS 1s infinite steps(2); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003160}}
+    .spaceInvaders .spaceShips .row {
+      overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003162}}
+      .spaceInvaders .spaceShips .row:after {
+        content: '';
+        display: block;
+        clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003171}}
+    .spaceInvaders .spaceShips .row_1,
+    .spaceInvaders .spaceShips .row_2,
+    .spaceInvaders .spaceShips .row_3 {
+      width: 700px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003173}}
+      .spaceInvaders .spaceShips .row_1 .ship,
+      .spaceInvaders .spaceShips .row_2 .ship,
+      .spaceInvaders .spaceShips .row_3 .ship {
+        background-image: url("/task/error-page/solutions/rysie/images/ship_1.png");
+        background-size: 120px 50px; }
+      @media (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003171}}
+        .spaceInvaders .spaceShips .row_1,
+        .spaceInvaders .spaceShips .row_2,
+        .spaceInvaders .spaceShips .row_3 {
+          width: 420px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003180}}
+          .spaceInvaders .spaceShips .row_1 .ship,
+          .spaceInvaders .spaceShips .row_2 .ship,
+          .spaceInvaders .spaceShips .row_3 .ship {
+            background-size: 80px 30px; } }
+      @media (max-width: 450px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003171}}
+        .spaceInvaders .spaceShips .row_1,
+        .spaceInvaders .spaceShips .row_2,
+        .spaceInvaders .spaceShips .row_3 {
+          width: 280px;
+          background-size: 60px 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003187}}
+          .spaceInvaders .spaceShips .row_1 .ship,
+          .spaceInvaders .spaceShips .row_2 .ship,
+          .spaceInvaders .spaceShips .row_3 .ship {
+            background-size: 60px 20px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003193}}
+    .spaceInvaders .spaceShips .row_4 {
+      width: 560px;
+      margin-left: 70px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003196}}
+      .spaceInvaders .spaceShips .row_4 .ship {
+        background-image: url("/task/error-page/solutions/rysie/images/ship_2.png");
+        background-size: 120px 50px; }
+      @media (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003193}}
+        .spaceInvaders .spaceShips .row_4 {
+          width: 420px;
+          margin-left: 42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003204}}
+          .spaceInvaders .spaceShips .row_4 .ship {
+            background-size: 80px 30px; } }
+      @media (max-width: 450px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003193}}
+        .spaceInvaders .spaceShips .row_4 {
+          width: 280px;
+          margin-left: 28px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003212}}
+          .spaceInvaders .spaceShips .row_4 .ship {
+            background-size: 60px 20px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003219}}
+    .spaceInvaders .spaceShips .row_5 {
+      margin-left: 140px;
+      width: 420px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003222}}
+      .spaceInvaders .spaceShips .row_5 .ship {
+        background-image: url("/task/error-page/solutions/rysie/images/ship_3.png");
+        background-size: 120px 50px; }
+      @media (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003219}}
+        .spaceInvaders .spaceShips .row_5 {
+          width: 252px;
+          margin-left: 84px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003230}}
+          .spaceInvaders .spaceShips .row_5 .ship {
+            background-size: 80px 30px; } }
+      @media (max-width: 450px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003219}}
+        .spaceInvaders .spaceShips .row_5 {
+          width: 168px;
+          margin-left: 56px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003238}}
+          .spaceInvaders .spaceShips .row_5 .ship {
+            background-size: 60px 20px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003246}}
+  .spaceInvaders .gameOver {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie\/css\/rysie\.scss}line{font-family:\00003251}}
+    .spaceInvaders .gameOver img {
+      margin: 0 auto;
+      width: 50%;
+      display: block; }

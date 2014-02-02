@@ -1,0 +1,259 @@
+/* 
+    Created on : 2014-02-02, 15:53:03
+    Author     : Rysie
+*/
+/* 
+    Anim Mixins Created on : 2014-02-01, 17:09:50
+    Author     : Rysie
+*/
+@-webkit-keyframes pupil {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes pupil {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@-o-keyframes pupil {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@keyframes pupil {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes eyelidL {
+  from {
+    margin-top: -2200px; }
+
+  to {
+    margin-top: -1700px; } }
+
+@-moz-keyframes eyelidL {
+  from {
+    margin-top: -2200px; }
+
+  to {
+    margin-top: -1700px; } }
+
+@-o-keyframes eyelidL {
+  from {
+    margin-top: -2200px; }
+
+  to {
+    margin-top: -1700px; } }
+
+@keyframes eyelidL {
+  from {
+    margin-top: -2200px; }
+
+  to {
+    margin-top: -1700px; } }
+
+@-webkit-keyframes eyelidM {
+  from {
+    margin-top: -1600px; }
+
+  to {
+    margin-top: -1200px; } }
+
+@-moz-keyframes eyelidM {
+  from {
+    margin-top: -1600px; }
+
+  to {
+    margin-top: -1200px; } }
+
+@-o-keyframes eyelidM {
+  from {
+    margin-top: -1600px; }
+
+  to {
+    margin-top: -1200px; } }
+
+@keyframes eyelidM {
+  from {
+    margin-top: -1600px; }
+
+  to {
+    margin-top: -1200px; } }
+
+@-webkit-keyframes eyelidS {
+  from {
+    margin-top: -1100px; }
+
+  to {
+    margin-top: -750px; } }
+
+@-moz-keyframes eyelidS {
+  from {
+    margin-top: -1100px; }
+
+  to {
+    margin-top: -750px; } }
+
+@-o-keyframes eyelidS {
+  from {
+    margin-top: -1100px; }
+
+  to {
+    margin-top: -750px; } }
+
+@keyframes eyelidS {
+  from {
+    margin-top: -1100px; }
+
+  to {
+    margin-top: -750px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000339}}
+.eye_container {
+  width: 100%;
+  background: #efefef;
+  height: 350px; }
+  @media (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000339}}
+    .eye_container {
+      height: 245.0px; } }
+  @media (max-width: 450px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000339}}
+    .eye_container {
+      height: 157.5px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000353}}
+.watching_you {
+  height: 100px;
+  margin: 2em auto 0 auto;
+  width: 750px; }
+  @media (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000353}}
+    .watching_you {
+      width: 525px; } }
+  @media (max-width: 450px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000353}}
+    .watching_you {
+      width: 337.5px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000366}}
+  .watching_you .error {
+    margin-bottom: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000370}}
+  .watching_you img.block {
+    display: block;
+    margin: 0 auto;
+    width: 75%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000376}}
+  .watching_you .eye {
+    position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000378}}
+    .watching_you .eye .pupil {
+      position: absolute;
+      z-index: 50;
+      top: 0;
+      left: 0;
+      width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000384}}
+      .watching_you .eye .pupil img {
+        width: 75%;
+        -webkit-animation: pupil 0.5s linear 2s forwards;
+        -moz-animation: pupil 0.5s linear 2s forwards;
+        -o-animation: pupil 0.5s linear 2s forwards;
+        animation: pupil 0.5s linear 2s forwards;
+        opacity: 0;
+        margin: 0 auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000392}}
+    .watching_you .eye .eyelid {
+      position: absolute;
+      overflow: hidden;
+      width: 750px;
+      height: 350px;
+      z-index: 100; }
+      @media (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000392}}
+        .watching_you .eye .eyelid {
+          width: 525px;
+          height: 280px; } }
+      @media (max-width: 450px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\0000392}}
+        .watching_you .eye .eyelid {
+          width: 337.5px;
+          height: 202.5px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\00003109}}
+      .watching_you .eye .eyelid .eyelash {
+        background: url("/task/error-page/solutions/rysie2/images/eyelash.png") bottom center no-repeat;
+        width: 750px;
+        height: 250px;
+        margin-top: -150px;
+        background-size: 500px; }
+        @media (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\00003109}}
+          .watching_you .eye .eyelid .eyelash {
+            width: 525px;
+            height: 175px;
+            margin-top: -105px;
+            background-size: 350px; } }
+        @media (max-width: 450px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\00003109}}
+          .watching_you .eye .eyelid .eyelash {
+            width: 337.5px;
+            height: 112.5px;
+            margin-top: -67.5px;
+            background-size: 225px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\00003130}}
+      .watching_you .eye .eyelid .circle {
+        background: #EFEFEF;
+        margin-top: -2200px;
+        margin-left: -628px;
+        width: 2000px;
+        height: 2000px;
+        border-radius: 1000px;
+        -webkit-animation: eyelidL 0.4s ease 3s 4 alternate;
+        -moz-animation: eyelidL 0.4s ease 3s 4 alternate;
+        -o-animation: eyelidL 0.4s ease 3s 4 alternate;
+        animation: eyelidL 0.4s ease 3s 4 alternate; }
+        @media (max-width: 700px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\00003130}}
+          .watching_you .eye .eyelid .circle {
+            margin-top: -1540.0px;
+            margin-left: -439.6px;
+            width: 1400px;
+            height: 1400px;
+            border-radius: 700px;
+            -webkit-animation: eyelidM 0.4s ease 3s 4 alternate;
+            -moz-animation: eyelidM 0.4s ease 3s 4 alternate;
+            -o-animation: eyelidM 0.4s ease 3s 4 alternate;
+            animation: eyelidM 0.4s ease 3s 4 alternate; } }
+        @media (max-width: 450px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\00003130}}
+          .watching_you .eye .eyelid .circle {
+            margin-top: -990.0px;
+            margin-left: -282.6px;
+            width: 900px;
+            height: 900px;
+            border-radius: 450px;
+            -webkit-animation: eyelidS 0.4s ease 3s 4 alternate;
+            -moz-animation: eyelidS 0.4s ease 3s 4 alternate;
+            -o-animation: eyelidS 0.4s ease 3s 4 alternate;
+            animation: eyelidS 0.4s ease 3s 4 alternate; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/RubyDK\/cargomedia\%20rysie\%201\/task\/error-page\/solutions\/rysie2\/css\/rysie\.scss}line{font-family:\00003160}}
+  .watching_you .note {
+    -webkit-animation: pupil 0.5s linear 3s forwards;
+    -moz-animation: pupil 0.5s linear 3s forwards;
+    -o-animation: pupil 0.5s linear 3s forwards;
+    animation: pupil 0.5s linear 3s forwards;
+    opacity: 0;
+    margin: 40px auto 0 auto;
+    font-family: 'Bad Script',cursive;
+    font-size: 2rem;
+    text-align: center; }
