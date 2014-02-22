@@ -1,0 +1,131 @@
+/* 
+    Created on : 2014-02-20, 09:47:08
+    Author     : Marcin Maciński <rys@rysie.com>
+*/
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities/lists";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,latin-ext);
+
+$gray_light: #e0e0e0;
+$gray_med: #d0d0d0;
+$gray_dark: #909090;
+
+html, body {
+    height: 100%;
+    background: $gray_light;
+    font-family: "Open Sans Condensed";
+    font-weight: 300;
+}
+
+b, em {
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+
+h1 {
+    font-size: 30pt;
+    color: $gray_dark;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24pt;
+    color: $gray_dark;
+    text-align: center;    
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#main {
+    background: white;
+    width: 800px;
+    padding: 40px;
+    @include box-sizing("padding-box");
+    margin: 0 auto;
+}
+
+#reset {
+    width: 620px;
+    padding: 10px;
+    border: 1px solid $gray_dark;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    background: $gray_light;
+    cursor: pointer;
+    display: none;
+    &:hover {
+        background: $gray_med;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    #main { width: 440px; }
+    #reset { width: 340px; }
+    h1 { font-size: 24pt; }
+    h2 { font-size: 18pt; }
+}
+
+@media screen and (max-width: 450px) {
+    #main { width: 255px; }
+    #reset { width: 160px; }
+    h1 { font-size: 18pt; }
+    h2 { font-size: 14pt; }
+}
+
+#suggested_friends {
+    display: none;
+}
+
+ul.people-boxes {
+    @include horizontal-list(false);
+    width: 90%;
+    margin: 0 auto;
+
+    li  {
+        &.person {
+            @include box-sizing("padding-box");
+            @include opacity(0.5);
+            width: 150px;
+            padding: 10px;
+            height: 75px;
+            margin: 0 5px 10px 5px;
+            border: 1px solid $gray_dark;
+            background: $gray_light;;
+            cursor: pointer;
+
+            .name {
+                font-size: 12pt;
+                font-weight: 700;
+            }
+
+            .friends {
+                height: auto;
+                white-space: normal;
+            }
+
+            &:hover {
+                @include opacity(1);
+            }
+        }
+
+        &.friend_highlight {
+            background: #c0e0c0;
+        }
+
+        &.myself_highlight {
+            @include opacity(1);
+            background: #e0e0c0;
+        }
+
+    }
+}

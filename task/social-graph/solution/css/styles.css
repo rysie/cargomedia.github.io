@@ -1,0 +1,171 @@
+@charset "CP852";
+/* 
+    Created on : 2014-02-20, 09:47:08
+    Author     : Marcin Maciński <rys@rysie.com>
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,latin-ext);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+html, body {
+  height: 100%;
+  background: #e0e0e0;
+  font-family: "Open Sans Condensed";
+  font-weight: 300; }
+
+b, em {
+  font-weight: 700; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+  margin: 0 0 20px 0; }
+
+h1 {
+  font-size: 30pt;
+  color: #909090;
+  text-align: center; }
+
+h2 {
+  font-size: 24pt;
+  color: #909090;
+  text-align: center; }
+
+p {
+  text-align: center;
+  margin: 10px 0; }
+
+#main {
+  background: white;
+  width: 800px;
+  padding: 40px;
+  -webkit-box-sizing: padding-box;
+  -moz-box-sizing: padding-box;
+  box-sizing: padding-box;
+  margin: 0 auto; }
+
+#reset {
+  width: 620px;
+  padding: 10px;
+  border: 1px solid #909090;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  background: #e0e0e0;
+  cursor: pointer;
+  display: none; }
+  #reset:hover {
+    background: #d0d0d0; }
+
+@media screen and (max-width: 800px) {
+  #main {
+    width: 440px; }
+
+  #reset {
+    width: 340px; }
+
+  h1 {
+    font-size: 24pt; }
+
+  h2 {
+    font-size: 18pt; } }
+@media screen and (max-width: 450px) {
+  #main {
+    width: 255px; }
+
+  #reset {
+    width: 160px; }
+
+  h1 {
+    font-size: 18pt; }
+
+  h2 {
+    font-size: 14pt; } }
+#suggested_friends {
+  display: none; }
+
+ul.people-boxes {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  width: 90%;
+  margin: 0 auto; }
+  ul.people-boxes li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    white-space: nowrap;
+    display: inline;
+    float: left; }
+  ul.people-boxes li.person {
+    -webkit-box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    box-sizing: padding-box;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    width: 150px;
+    padding: 10px;
+    height: 75px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid #909090;
+    background: #e0e0e0;
+    cursor: pointer; }
+    ul.people-boxes li.person .name {
+      font-size: 12pt;
+      font-weight: 700; }
+    ul.people-boxes li.person .friends {
+      height: auto;
+      white-space: normal; }
+    ul.people-boxes li.person:hover {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1; }
+  ul.people-boxes li.friend_highlight {
+    background: #c0e0c0; }
+  ul.people-boxes li.myself_highlight {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    background: #e0e0c0; }
